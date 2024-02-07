@@ -33,9 +33,13 @@ export default function Home() {
         {InnerComp()}
         <Link href="/login">go to login page</Link>
         <br />
-        <Link href="/about">go to login page</Link>
-        <button onClick={()=>{navigate("/login")}}>go to login page</button>
-        <button onClick={()=>{navigate("/about")}}>go to About  page</button>
+        <Link href="/about">go to login page</Link><br />
+        <button onClick={()=>{navigate("/login")}}>go to login page</button><br />
+        <button onClick={()=>{navigate("/about")}}>go to About  page</button><br />
+
+        <button onClick={()=>{navigate("/about/aboutstudent")}}>go to Aboutstudent  page</button><br />
+        <button onClick={()=>{navigate("/login/loginteacher")}}>go to loginteacher  page</button><br />
+
       </div>
     </main>
   );
