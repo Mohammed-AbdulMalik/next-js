@@ -1,6 +1,9 @@
 'use client'
+import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function Home() {
+  const router = useRouter();
   const showAlert=(data)=>{
     window.alert("hi malik");
   }
@@ -14,6 +17,11 @@ export default function Home() {
       </>
     )
   }
+
+  const navigate=(url)=>{
+    router.push(url);
+  }
+
   return (
     <main  >
       <div >
@@ -23,6 +31,11 @@ export default function Home() {
         <button onClick={()=>{showAlert("mallik")}}>Click Me</button>
         <InnerComp/>
         {InnerComp()}
+        <Link href="/login">go to login page</Link>
+        <br />
+        <Link href="/about">go to login page</Link>
+        <button onClick={()=>{navigate("/login")}}>go to login page</button>
+        <button onClick={()=>{navigate("/about")}}>go to About  page</button>
       </div>
     </main>
   );
