@@ -7,7 +7,7 @@ const LoginStudent=()=>{
     const router = useRouter();
     return(
         <>
-            <h1>This is login Student page</h1>
+            <h1 className="heading">This is login Student page</h1>
             <Link href="/">go to home page</Link>
             <button onClick={()=>{router.push("/")}}>Go to home Page</button>
         </>
