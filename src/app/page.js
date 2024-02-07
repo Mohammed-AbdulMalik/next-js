@@ -39,6 +39,7 @@ export default function Home() {
 
         <button onClick={()=>{navigate("/about/aboutstudent")}}>go to Aboutstudent  page</button><br />
         <button onClick={()=>{navigate("/login/loginteacher")}}>go to loginteacher  page</button><br />
+        <button onClick={()=>{navigate("/studentlist")}}>go to studentlist  page</button><br />
 
       </div>
     </main>
