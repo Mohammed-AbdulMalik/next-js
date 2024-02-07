@@ -8,7 +8,7 @@ const Login=()=>{
     const router = useRouter();
     return (
         <>
-            <div>
+            <div className="heading">
                 Login
             </div>
             <Link href="/">go to home page</Link>
